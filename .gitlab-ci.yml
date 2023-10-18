@@ -1,0 +1,7 @@
+build project:
+  image: node:18
+  script:
+    - yarn config set cache-folder .yarn
+    - yarn install
+    - yarn test
+    - yarn build
